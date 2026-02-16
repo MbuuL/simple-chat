@@ -27,6 +27,33 @@ A real-time chat application with public and private messaging, online presence 
 - pnpm
 - PostgreSQL
 
+### Cloning
+
+The `backend/` and `frontend/` directories are Git submodules pointing to separate repos. Clone with submodules included:
+
+```bash
+git clone --recurse-submodules git@github.com:MbuuL/chat.git
+```
+
+If you already cloned without `--recurse-submodules`, initialize them:
+
+```bash
+git submodule init
+git submodule update
+```
+
+To pull the latest changes including submodule updates:
+
+```bash
+git pull --recurse-submodules
+```
+
+To update submodules to their latest remote commits:
+
+```bash
+git submodule update --remote
+```
+
 ### Backend
 
 ```bash
